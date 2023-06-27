@@ -1,0 +1,74 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-size: 10rem;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: initial;
+    overflow: hidden;
+  }
+  
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tamat {
+    position: relative;
+    height: 84vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    z-index: 10;
+    scroll-behavior: initial;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden -moz-hidden-unscrollable;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    z-index: 1;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    transition: color 1s;
+  }
+  
+  a:hover {
+    color: black !important;
+    text-decoration: line-through;
+  }
+  
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #the-end {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    transition: background-color 1s;
+  }
+  
+  #link {
+    position: relative;
+    z-index: 10;
+  }
+  
+  #link:hover + #the-end {
+    background-color: whitesmoke;
+  }
